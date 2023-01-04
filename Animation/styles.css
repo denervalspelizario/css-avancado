@@ -1,0 +1,36 @@
+
+@keyframes animacao {  /* da-se o nome e diz oq a animacao vai fazer */
+    from { background-color: red; }  /*  vai mudar de vermlho para amarelo  */
+    to { background-color: yellow; }
+}
+
+@keyframes animacao2 {  /* da-se o nome e diz oq a animacao vai fazer */
+    0% {}
+    30% {width: 100px;} /* em 30% do tempo fica com largura de 100px */
+    60% {background-color: red;}  /*em 60% do tempo  a cor de fundo fica vermelho */
+    80% {left: 100px; background-color: blue;} /* em 80% do tempo ele se posiciona a esquerda 100px e a cor de fundo muda para azul*/
+    100% {height: 100px;} /*em 100% do tempo ele aumenta de tamanho em 100px   */
+}
+
+
+
+
+/* Animacao 1 */
+.animation-div {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: animacao;  /* linka com o keyframe que é oq vai dizer oq a animacao vai fazer */
+    animation-duration: 5s; /* duracao da animacao*/
+}
+
+
+
+/* Animacao 2 */
+.animation-div2 {
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    animation-name: animacao2;  /* linka com o keyframe que é oq vai dizer oq a animacao vai fazer */
+    animation-duration: 6s; /* duracao da animacao*/
+}
