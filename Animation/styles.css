@@ -12,8 +12,21 @@
     100% {height: 100px;} /*em 100% do tempo ele aumenta de tamanho em 100px   */
 }
 
+@keyframes animacao3 {  /* da-se o nome e diz oq a animacao vai fazer */
+    from {left: 0;}
+    to {left: 200px; background-color: green;}
+}
+
+@keyframes animacao4 {  /* da-se o nome e diz oq a animacao vai fazer */
+    from {left: 0;}
+    to {left: 500px;}
+}
 
 
+.espaço {
+    border: 3px solid black;
+    margin: 20px;
+}
 
 /* Animacao 1 */
 .animation-div {
@@ -31,6 +44,54 @@
     width: 200px;
     height: 200px;
     background-color: black;
+    position: relative; /* precisa colocar o position relative senão ela na hora da animação ela não se move */
     animation-name: animacao2;  /* linka com o keyframe que é oq vai dizer oq a animacao vai fazer */
     animation-duration: 6s; /* duracao da animacao*/
+}
+
+
+/* animation delay e interation */
+.animation-div3 {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    animation-name: animacao3;  /* linka com o keyframe que é oq vai dizer oq a animacao vai fazer */
+    position: relative; /* precisa colocar o position relative senão ela na hora da animação ela não se move */
+    animation-duration: 5s; /* duracao da animacao*/
+    animation-delay: 2s; /* Atrasa a animação em 2 segundos*/
+    animation-iteration-count: 3; /* a animação vai rodar 3 vezes obs se eu quiser que ela rode infinitamente é só usar infinite no lugar do 3  */
+}
+
+
+/* animation timing function */
+
+.box {
+    background-color: orange;
+    margin-bottom: 1rem;
+    width: 50px;
+    height: 50px;
+    position: relative; /* precisa colocar o position relative senão ela na hora da animação ela não se move */
+    animation-name: animacao4;  /* linka com o keyframe que é oq vai dizer oq a animacao vai fazer */
+    animation-duration: 4s; /* duracao da animacao*/
+    animation-iteration-count: infinite; /* a animação vai rodar infinita vezes */
+}
+
+#div-animation4 {
+
+}
+
+#div-animation5 {
+    
+}
+
+#div-animation6 {
+    
+}
+
+#div-animation7 {
+    
+}
+
+#div-animation8 {
+    
 }
